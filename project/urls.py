@@ -36,8 +36,8 @@ urlpatterns += i18n_patterns(
     
     # checkout------------------------------------------ 
     path('cart/checkout/',views.cart_checkout,name='cart_checkout'),
+    path('placholder/',views.placholder,name='placholder'),
     
-    path('bsse/',views.signout,name='signout'),
     
 )
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-13 17:19+0300\n"
+"POT-Creation-Date: 2024-07-20 02:23+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -35,50 +35,50 @@ msgstr "اللون"
 msgid "price"
 msgstr "السعر"
 
-#: .\templates\main\base.html:66
+#: .\templates\main\base.html:68
 msgid "Account"
 msgstr "الحساب"
 
-#: .\templates\main\base.html:67
+#: .\templates\main\base.html:69
 msgid "Logout"
 msgstr "خروج"
 
-#: .\templates\main\base.html:69
+#: .\templates\main\base.html:71
 msgid "login"
 msgstr "دخول"
 
-#: .\templates\main\base.html:163
+#: .\templates\main\base.html:165
 msgid "Home"
 msgstr "الرئيسية"
 
-#: .\templates\main\base.html:164
+#: .\templates\main\base.html:166
 msgid "Prodects"
 msgstr "المنتجات"
 
-#: .\templates\main\base.html:275
+#: .\templates\main\base.html:277
 msgid "Contact"
 msgstr "تواصل معنا"
 
-#: .\templates\main\home.html:19
-msgid "Easy Your Life  "
-msgstr "سهولة الاستخدام "
+#: .\templates\main\base.html:289
+msgid "Search"
+msgstr "بحث"
 
-#: .\templates\main\home.html:20
-msgid " For Smart Device "
-msgstr "ابتدا من "
-
-#: .\templates\main\home.html:24
-msgid "Only"
-msgstr "فقط"
-
-#: .\templates\main\home.html:26
-msgid "SR"
-msgstr "رس"
-
-#: .\templates\main\home.html:118
+#: .\templates\main\home.html:89
 msgid "New Products"
 msgstr "المنتجات الجديدة"
 
-#: .\templates\main\home.html:120
+#: .\templates\main\home.html:91
 msgid "There are many variations of passages of Lorem Ipsum available"
 msgstr "تصفح كل ماهو جديد"
+
+#~ msgid "Easy Your Life  "
+#~ msgstr "سهولة الاستخدام "
+
+#~ msgid " For Smart Device "
+#~ msgstr "ابتدا من "
+
+#~ msgid "Only"
+#~ msgstr "فقط"
+
+#~ msgid "SR"
+#~ msgstr "رس"

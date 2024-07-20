@@ -4,20 +4,20 @@
 
 
 <!DOCTYPE html>
-<html lang="zxx" dir="ltr">
+<html  dir="ltr">
 
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hmart – Electronics eCommerce HTML Template</title>
+    <title>Hmart</title>
     <meta name="robots" content="index, follow" />
     <meta name="description" content="Hmart-Smart Product eCommerce html Template">
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico" />
     
-     <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}" />
     <link rel="stylesheet" href="{% static 'assets/css/font.awesome.css' %}" />
     <link rel="stylesheet" href="{% static 'assets/css/pe-icon-7-stroke.css' %}" />
     <link rel="stylesheet" href="{% static 'assets/css/animate.min.css' %}">
@@ -39,17 +39,19 @@
                         <div class="col-3">
                             <div class="welcome-text">
                                 <form action="{% url 'set_language' %}" method="post">
-                                    {% csrf_token %}
+                                {% csrf_token %}
                                   {% get_current_language as LANGUAGE_CODE %}                                         
                                   <input name="next" type="hidden" value="{{ request.get_full_path|slice:'3:' }}">
                                   {% if LANGUAGE_CODE == 'ar' %}
                                   {% comment %} <body dir = 'rtl'>
                                   </body> {% endcomment %}
-                                      <button type='submit' name='language' value='en' class="icon solid fa-language">
+                                      <button type='submit' name='language' value='en' class="text-white">
+                                        <i class=" text-primary fa fa-globe px-1" aria-hidden="true"></i>
                                           <span class="label"></span>English
                                       </button>
                                   {% else %}
-                                      <button type='submit' name='language' value='ar' class="icon solid fa-language">
+                                      <button type='submit' name='language' value='ar' class="text-white">
+                                        <i class="text-primary fa fa-globe px-1" aria-hidden="true"></i>
                                           <span class="label"></span>عربي
                                       </button>
                                   {% endif %}
@@ -63,7 +65,7 @@
                                     <li><a href="/contact_us/"><i class="fa fa-envelope-o"></i> demo@example.com</a></li>
                                     {% if user.is_authenticated %}
                                     <li><a href="my-account.html"><i class="fa fa-user"></i> {% trans 'Account'%}</a></li>
-                                    <li><a href="{% url 'signout' %}"><i class="fa fa-unlock"></i>{% trans  'Logout' %}</a></li>
+                                    <li><a href="{% url 'accounts:signout' %}"><i class="fa fa-unlock"></i>{% trans  'Logout' %}</a></li>
                                     {% else %}
                                     <li><a href="{% url 'login' %}"><i class="fa fa-lock"></i>{% trans  'login' %}</a></li>
                                     {% endif %}

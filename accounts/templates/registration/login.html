@@ -20,9 +20,9 @@
                 <div class="login-register-form">
                   <form action="{% url 'login' %}" method="post">
                     {% if form.errors %}
-                    <div class="alert alert-danger" role="alert">
+                    {% comment %} <div class="alert alert-danger" role="alert">
                       Your username and password didn't match. Please try again.
-                    </div>
+                    </div> {% endcomment %}
                     {% endif %} {% if next %} {% if user.is_authenticated %}
                     <p>
                       Your account doesn't have access to this page. To proceed,
@@ -40,7 +40,6 @@
                         >
                         <a href="#">Forgot Password?</a>
                       </div>
-
                       <button class="btn btn-primary w-100" type="submit">
                         Login
                       </button>

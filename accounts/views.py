@@ -20,6 +20,6 @@ def signup(requset):
     return render(requset, "registration/signup.html", {'form': form})
 
 
-# def logout_view(requset):
-#     logout(requset)
-#     return render(requset, "registration/logged_out.html")
+def signout(request):
+    logout(request)
+    return redirect('/')

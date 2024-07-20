@@ -7,8 +7,6 @@ from django.core.paginator import Paginator
 from django.contrib.auth.decorators import login_required
 from django.utils.translation import gettext as _
 from cart.cart import Cart
-from store_app.forms import Order_Form 
-from django.contrib.auth import logout
 
 
 def HOME (request):
@@ -23,8 +21,8 @@ def HOME (request):
 
 
 def BASE (request):
-    return render(request , 'main/base.html' )
- 
+   return render(request , 'main/base.html' )
+
 
 def SEARCH (request):
     query=request.GET.get('query')
@@ -201,7 +199,11 @@ def cart_checkout(request):
     return render(request, 'cart/checkout.html')
  
  
-
-def signout(request):
-    logout(request)
-    return redirect('/')
+ 
+def placholder(request):
+   if request.method == 'POST':
+      firstname = request.POST.get('firstname')
+      print(firstname)
+   return render(request, 'cart/placholder.html')
+ 
+ 

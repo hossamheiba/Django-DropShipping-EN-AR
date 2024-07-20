@@ -89,9 +89,9 @@
                         </ul>
                     </div>
                     <div class="pro-details-quality">
-                        <div class="cart-plus-minus">
+                        {% comment %} <div class="cart-plus-minus">
                             <input class="cart-plus-minus-box" type="text" name="qtybutton" value="1" />
-                        </div>
+                        </div> {% endcomment %}
                         <div class="pro-details-cart">
                             <a href="{% url 'cart_add' product_details.id %}">Add To Cart</a>
 
@@ -193,8 +193,7 @@
                                         <h3>Add a Review</h3>
                                         <div class="ratting-form">
                                             <form action="#">
-                                                <div class="star-box">
-                                                    <span>Your rating:</span>
+                                                {% comment %} <div class="star-box">
                                                     <div class="rating-product">
                                                         <i class="fa fa-star"></i>
                                                         <i class="fa fa-star"></i>
@@ -203,17 +202,8 @@
                                                         <i class="fa fa-star"></i>
                                                     </div>
                                                 </div>
-                                                <div class="row">
-                                                    <div class="col-md-6">
-                                                        <div class="rating-form-style">
-                                                            <input placeholder="Name" type="text" />
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <div class="rating-form-style">
-                                                            <input placeholder="Email" type="email" />
-                                                        </div>
-                                                    </div>
+                                                <div class="row"> {% endcomment %}
+                                            
                                                     <div class="col-md-12">
                                                         <div class="rating-form-style form-submit">
                                                             <textarea name="Your Review" placeholder="Message"></textarea>
